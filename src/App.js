@@ -1,26 +1,40 @@
-import React, {useState, useMemo, useCallback} from 'react'
-import ItemsList from "./itemsList";
+import React, {useEffect, useState} from 'react'
 
-export default function App() {
-    const [colored, setColored] = useState(false)
-    const [count, setCount] = useState(1)
+function useLogger (value) {
+    useEffect(()=> {
+        console.log('value changed', value)
+    }, [value])
+}
 
+function useInput(initialValue) {
+    const [value, setValue] = useState(initialValue)
 
-    const styles = useMemo( () => ({
-        color: colored ? 'darkred' : 'black'
-    }), [colored])
-
-    const generateItemsFromAPI = () => {
-        return new Array(count).fill('').map((_,i)=>`element ${i + 1}`)
+    const onChange = event =>{
+        setValue(event.target.value)
     }
 
-    return(
-        <div>
-           <h1 style = {styles}>Calculated value: {count}</h1>
-            <button className="btn btn-success" onClick={() => setCount (prev => prev + 1)}>+</button>
-            <button className="btn btn-danger" onClick={() => setColored (prev => !prev)}>-</button>
+    const clear = () => setValue('')
 
-            <ItemsList getItem = {generateItemsFromAPI}/>
+    return {
+        bind: {value, onChange},
+        value,
+        clear
+    }
+}
+
+export default function App() {
+    const input = useInput('')
+    const last = useInput('')
+
+    useLogger(input.value)
+
+    return (
+        <div className={'container pt-3'}>
+            <input type="text" {...input.bind}/>
+            <input type="text" {...last}/>
+            <h1>{input.value} {last.value}</h1>
+
+            <button className="btn btn-warning" onClick={()=>input.clear()}>Clear</button>
         </div>
     )
 }

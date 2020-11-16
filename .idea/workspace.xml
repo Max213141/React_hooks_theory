@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5d9aa2e-0ade-4e05-af7e-93f17bf86b07" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLinters/eslint.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/examples/useEffect.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/examples/useMemo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/examples/useRef.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/itemsList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Alert/AlertApp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Alert/AlertContext.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Alert/Main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Alert/alert.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/examples/useCallback.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
     </list>
@@ -39,6 +38,11 @@
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\kupts\WebstormProjects\react_hooks\src\Alert" />
+    </key>
+  </component>
   <component name="RunManager" selected="npm.npm start">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
       <method v="2" />
@@ -66,7 +70,8 @@
       <workItem from="1605362385214" duration="575000" />
       <workItem from="1605428265434" duration="3380000" />
       <workItem from="1605442599681" duration="2730000" />
-      <workItem from="1605450267851" duration="11536000" />
+      <workItem from="1605450267851" duration="13009000" />
+      <workItem from="1605515111773" duration="16658000" />
     </task>
     <servers />
   </component>
@@ -78,10 +83,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="232" y="219" width="729" height="568" key="#ESLint/0.0.1920.1040@0.0.1920.1040" timestamp="1605450099124" />
-    <state x="103" y="253" key="Vcs.Push.Dialog.v2" timestamp="1605362547838">
+    <state x="284" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605530450864">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="103" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605362547838" />
+    <state x="284" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1605530450864" />
+    <state x="103" y="253" key="Vcs.Push.Dialog.v2" timestamp="1605470814752">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="103" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605470814752" />
     <state x="174" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1605362023972">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
